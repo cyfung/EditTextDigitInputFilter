@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
     EditText editText = (EditText) findViewById(R.id.editText);
-    editText.getEditableText().setFilters(new InputFilter[] {
+    editText.setFilters(new InputFilter[] {
         new DecimalDigitsInputFilter()
     });
   }
